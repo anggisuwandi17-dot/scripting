@@ -1,76 +1,3 @@
-# Green Tunnel
-
-<p align="center">
-    <img src="assets/logo.png" alt="green tunnel logo" width="200">
-</p>
-<p align="center">
-    <img src="https://img.shields.io/github/license/SadeghHayeri/GreenTunnel.svg?color=Green&style=for-the-badge">
-    <img src="https://img.shields.io/npm/v/green-tunnel?color=Green&style=for-the-badge">
-    <img src="https://img.shields.io/github/repo-size/SadeghHayeri/GreenTunnel.svg?color=Green&style=for-the-badge">
-</p>
-
-GreenTunnel bypasses DPI (Deep Packet Inspection) systems found in many ISPs (Internet Service Providers) which block access to certain websites.
-
-> **Note:** GreenTunnel does not hide your IP address. It only bypasses DPI-based censorship.
-
----
-
-<table>
-<tr>
-<td width="340"><img src="assets/new-version.png" alt="GreenTunnel v2.0.0 new UI" width="320"></td>
-<td valign="top" style="padding-left: 24px;">
-
-**GreenTunnel v2 — with the help of [Claude Code](https://code.claude.com/docs/en/overview) — is out now.**
-
-After years of silence, this project is alive again. The entire codebase has been rebuilt from the ground up: native ESM, Node.js 20+, a brand new dark UI, and a clean dependency tree with zero known vulnerabilities.
-
-Open-source tools that help people reach the free internet shouldn't die — and with AI-assisted development, they don't have to. We'll keep doing our best to help people access the open internet, one packet at a time.
-
-</td>
-</tr>
-</table>
-
-<p align="center">
-    <img src="assets/demo.gif" alt="green tunnel demo">
-</p>
-
----
-
-## Installation
-
-### Requirements
-
-- **Node.js 20+**
-
-### npm (recommended)
-
-```bash
-npm install -g green-tunnel
-```
-
-After installation, run with `gt` or `green-tunnel`.
-
-### Docker
-
-```bash
-docker run -p 8000:8000 sadeghhayeri/greentunnel
-```
-
----
-
-## Usage
-
-### CLI
-
-```
-Usage: green-tunnel [options]
-Usage: gt [options]
-
-Options:
-  --ip                   IP address to bind proxy server     [string]  [default: "127.0.0.1"]
-  --port                 Port to bind proxy server           [number]  [default: 8000]
-  --https-only           Block insecure HTTP requests        [boolean] [default: false]
-  --dns-type             DNS resolver type                   [string]  [choices: "https", "tls", "unencrypted"] [default: "https"]
   --dns-server           DNS server URL                      [string]  [default: "https://cloudflare-dns.com/dns-query"]
   --dns-ip               IP for unencrypted DNS              [string]  [default: "127.0.0.1"]
   --dns-port             Port for unencrypted DNS            [number]  [default: 53]
@@ -125,9 +52,6 @@ docker run -d --restart unless-stopped -p 8000:8000 sadeghhayeri/greentunnel
 | `SILENT` | Suppress output | `false` |
 | `VERBOSE` | Debug namespace | — |
 
-### Graphical Interface (GUI)
-
-Download the pre-built installer for your OS from the [releases](https://github.com/SadeghHayeri/GreenTunnel/releases) page.
 
 ---
 
@@ -167,6 +91,3 @@ Pull requests and issues are always welcome.
 
 ---
 
-## License
-
-Licensed under the [MIT License](https://github.com/SadeghHayeri/GreenTunnel/blob/main/LICENSE).
